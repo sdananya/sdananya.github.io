@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -11,54 +11,41 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.Tech in Computer Science and Technology, Indian Institute of Engineering Science and Technology (IIEST) Shibpur, 2021–2025
+  * CGPA: 9.5
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* January 2025–present: Pre-doctoral Research Fellow, Team DiskANN
+  * Microsoft Research India
+  * Working on making retrieval better and evaluating Deep Research systems
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* May 2024–July 2024: Software Development Engineer Intern
+  * Amazon
+  * Implemented domain-driven design principles to optimize the notification triggering process
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+Participations
+======
+* February 2026–present: SPAR Fellow (Mentee)
+  * Cornell University
+  * Working on AI Safety and Eigenbench with Prof. Lionel Levine
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Machine Learning
+  * Supervised learning, metric learning, feature selection
+  * Retrieval evaluation and benchmarking
+* Algorithms & Systems
+  * Approximate nearest neighbor search
+  * Vector search for filtered datasets
+  * Data structures, algorithm design
+* Programming
+  * C, C++, Python, Kotlin, Rust, JavaScript
+* Tools & Frameworks
+  * PyTorch, TensorFlow, scikit-learn, AWS, SQL, Git
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
