@@ -13,7 +13,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Portfolio"
 title_separator          : "-"
 name                     : &name "Ananya Sutradhar"
-description              : &description "Research Fellow @Microsoft Research. Making retrieval better and evaluating Deep Research systems."
+description              : &description "Anthropic Fellow working on AI safety and alignment research. Previously Research Fellow @Microsoft Research."
 url                      : https://sdananya.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -29,7 +29,7 @@ author:
   pronouns         : "she/her"
   bio              :
   location         : "India"
-  employer         : "Microsoft Research"
+  employer         : "Anthropic Fellows Program"
   uri              : # URL
   email            : "ananyasutradhar1403@gmail.com"
 

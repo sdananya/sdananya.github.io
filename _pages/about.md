@@ -7,9 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm Ananya Sutradhar, a Research Fellow at [Microsoft Research India](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/). My work sits at the intersection of machine learning, algorithms, and systems — I enjoy building things, breaking things, and learning from both.
+Hi! I'm Ananya Sutradhar. I'm currently an [Anthropic Fellow](https://alignment.anthropic.com/2024/anthropic-fellows-program/), working on AI safety and alignment research. My work sits at the intersection of machine learning, algorithms, and systems — I enjoy building things, breaking things, and learning from both.
 
-My research interests span **approximate nearest neighbor search**, **information retrieval**, and **evaluation of deep research systems**. At Microsoft Research (Team DiskANN), I work on making retrieval better and evaluating Deep Research systems, including learning filter-aware distance metrics for efficient multi-filter nearest neighbor retrieval.
+Previously, I was a Research Fellow at [Microsoft Research India](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/).
+
+My broader research interests span **AI safety and alignment**, **approximate nearest neighbor search**, **information retrieval**, and **evaluation of deep research systems**. At Microsoft Research (Team DiskANN), I worked on making retrieval better and evaluating Deep Research systems, including learning filter-aware distance metrics for efficient multi-filter nearest neighbor retrieval.
 
 I am also a **SPAR Fellow at Cornell University**, working with Prof. Lionel Levine on AI Safety and Eigenbench.
 
