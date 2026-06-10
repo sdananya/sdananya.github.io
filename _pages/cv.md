@@ -16,9 +16,13 @@ Education
 
 Work experience
 ======
-* January 2025–present: Pre-doctoral Research Fellow, Team DiskANN
+* May 2026–present: Anthropic Fellow
+  * Anthropic Fellows Program
+  * Working on AI safety and alignment research
+
+* January 2025–May 2026: Pre-doctoral Research Fellow, Team DiskANN
   * Microsoft Research India
-  * Working on making retrieval better and evaluating Deep Research systems
+  * Worked on making retrieval better and evaluating Deep Research systems
 
 * May 2024–July 2024: Software Development Engineer Intern
   * Amazon

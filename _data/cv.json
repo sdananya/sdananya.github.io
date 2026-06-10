@@ -4,7 +4,7 @@
     "email": "ananyasutradhar1403@gmail.com",
     "phone": "9531538309",
     "website": "https://sdananya.github.io",
-    "summary": "Pre-doctoral Research Fellow at Microsoft Research India (Team DiskANN), focused on making retrieval better and evaluating Deep Research systems. SPAR Fellow at Cornell with Prof. Lionel Levine.",
+    "summary": "Anthropic Fellow working on AI safety and alignment research. Previously Pre-doctoral Research Fellow at Microsoft Research India (Team DiskANN), focused on making retrieval better and evaluating Deep Research systems. SPAR Fellow at Cornell with Prof. Lionel Levine.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -32,11 +32,18 @@
   },
   "work": [
     {
+      "position": "Anthropic Fellow",
+      "name": "Anthropic Fellows Program",
+      "startDate": "2026-05-01",
+      "endDate": "",
+      "summary": "Working on AI safety and alignment research."
+    },
+    {
       "position": "Pre-doctoral Research Fellow, Team DiskANN",
       "name": "Microsoft Research India",
       "startDate": "2025-01-01",
-      "endDate": "",
-      "summary": "Working on making retrieval better and evaluating Deep Research systems."
+      "endDate": "2026-05-01",
+      "summary": "Worked on making retrieval better and evaluating Deep Research systems."
     },
     {
       "position": "Software Development Engineer Intern",
