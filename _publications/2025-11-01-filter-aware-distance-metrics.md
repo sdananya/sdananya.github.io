@@ -1,7 +1,7 @@
 ---
 title: "Learning Filter-Aware Distance Metrics for Nearest Neighbor Search with Multiple Filters"
 collection: publications
-category: conferences
+category: papers
 permalink: /publication/2025-11-01-filter-aware-distance-metrics
 excerpt: 'We propose a method to learn filter-aware distance metrics that improve approximate nearest neighbor retrieval efficiency and accuracy under multiple conjunctive attribute filters.'
 date: 2025-11-01

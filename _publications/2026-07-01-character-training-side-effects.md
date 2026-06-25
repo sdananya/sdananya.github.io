@@ -1,7 +1,7 @@
 ---
 title: "Side Effects of Character Training: Quantifying Cross-Constitution Drift in LLMs"
 collection: publications
-category: workshops
+category: papers
 permalink: /publication/2026-07-01-character-training-side-effects
 excerpt: 'We quantify how character training a language model toward one constitution induces unintended behavioral drift when the model is evaluated against other constitutions.'
 date: 2026-07-01

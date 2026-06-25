@@ -1,7 +1,7 @@
 ---
 title: "Systematic Biomarker Discovery for Glioblastoma Subtyping Using Machine Learning"
 collection: publications
-category: conferences
+category: papers
 permalink: /publication/2025-01-01-glioblastoma-biomarker
 excerpt: 'A systematic machine learning pipeline for discovering biomarkers that distinguish glioblastoma subtypes using transcriptomics data, feature selection, and gene co-expression network analysis.'
 date: 2025-01-01

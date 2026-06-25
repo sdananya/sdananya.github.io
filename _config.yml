@@ -85,12 +85,8 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  conferences:
-    title: 'Conference Papers'
-  workshops:
-    title: 'Workshop Papers'
+  papers:
+    title: 'Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
