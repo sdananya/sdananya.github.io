@@ -96,7 +96,7 @@
       "name": "Side Effects of Character Training: Quantifying Cross-Constitution Drift in LLMs",
       "publisher": "ICML 2026 Workshop on Pluralistic Alignment",
       "releaseDate": "2026-07-01",
-      "website": "",
+      "website": "https://openreview.net/forum?id=oh9CqCyxSc",
       "summary": "Quantifies how character training a language model toward one constitution induces unintended behavioral drift when evaluated against other constitutions. Work done as a research mentor for SPAR."
     },
     {

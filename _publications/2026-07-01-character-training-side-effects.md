@@ -6,6 +6,7 @@ permalink: /publication/2026-07-01-character-training-side-effects
 excerpt: 'We quantify how character training a language model toward one constitution induces unintended behavioral drift when the model is evaluated against other constitutions.'
 date: 2026-07-01
 venue: 'ICML 2026 Workshop on Pluralistic Alignment'
+paperurl: 'https://openreview.net/forum?id=oh9CqCyxSc'
 citation: 'Kumar, B., Sutradhar, A., Panigrahi, S., Chang, J., &amp; Levine, L. (2026). &quot;Side Effects of Character Training: Quantifying Cross-Constitution Drift in LLMs.&quot; <i>ICML 2026 Workshop on Pluralistic Alignment</i>.'
 ---
 
