@@ -10,7 +10,7 @@
 locale                   : "en-US"
 timezone                 : "Etc/UTC"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Portfolio"
+title                    : "Ananya Sutradhar"
 title_separator          : "-"
 name                     : &name "Ananya Sutradhar"
 description              : &description "Anthropic Fellow working on AI safety and alignment research. Previously Research Fellow @Microsoft Research."
@@ -122,7 +122,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true      # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
