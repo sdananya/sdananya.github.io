@@ -11,10 +11,10 @@ Hi! I'm Ananya Sutradhar. I'm currently an [Anthropic Fellow](https://alignment.
 
 Previously, I was a Research Fellow at [Microsoft Research India](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/).
 
-My broader research interests span **AI safety and alignment**, **approximate nearest neighbor search**, **information retrieval**, and **evaluation of deep research systems**. At Microsoft Research (Team DiskANN), I worked on making retrieval better and evaluating Deep Research systems, including learning filter-aware distance metrics for efficient multi-filter nearest neighbor retrieval.
+My broader research interests span **AI safety and alignment**, **information retrieval**, and **evaluation of deep research systems**. At Microsoft Research (Team DiskANN), I worked on filter-aware distance metrics for efficient multi-filter nearest neighbor retrieval and evaluating Deep Research systems.
 
-I am also a **SPAR Fellow at Cornell University**, working with Prof. Lionel Levine on AI Safety and Eigenbench.
+I am also a [SPAR Fellow](https://sparai.org/) , working with Prof. Lionel Levine on Value Alignment and Character Training.
 
-I completed my B.Tech in Computer Science and Technology from [IIEST Shibpur](https://www.iiests.ac.in/) in 2025. Before joining MSR, I interned as a Software Development Engineer at [Amazon](https://www.amazon.com/).
+I completed my B.Tech in Computer Science and Technology from [IIEST Shibpur](https://www.iiests.ac.in/) in 2025. I also interned as a Software Development Engineer at [Amazon](https://www.amazon.com/) during the summer of 2024.
 
-Feel free to reach out via [email](mailto:ananyasutradhar1403@gmail.com) or find me on [Google Scholar](https://scholar.google.com/citations?user=CTUW-C4AAAAJ), [GitHub](https://github.com/sdananya), and [Twitter/X](https://x.com/ananya_sdhar).
+Feel free to reach out via [email](mailto:ananyasutradhar1403@gmail.com) or find me on [Google Scholar](https://scholar.google.com/citations?user=CTUW-C4AAAAJ), [LinkedIn](https://www.linkedin.com/in/ananya-sutradhar), and [Twitter/X](https://x.com/ananya_sdhar).
