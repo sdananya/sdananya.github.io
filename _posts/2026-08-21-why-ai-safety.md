@@ -11,7 +11,7 @@ tags:
   - career
 ---
 
-I have seen motivated people have strong takes. I think their belief in the takes keeps them going. As a person with borderline-ADHD (failed by 5 points), I realise it is very important for me to have a lot of interest in the thing that I am supposed to do. No one can pay me tons of money to do a thing (long term) that I don't feel excited about. So in this blog I will try to convince myself and maybe the rest of you why I am pursuing AI safety and particularly Technical AI safety with a hint of governance and philosophy.
+I have seen motivated people have strong takes. I think their belief in the takes keeps them going. As a person with borderline-ADHD (failed by 5 points), I realise it is very important for me to have strong takes and a lot of interest in the thing that I am supposed to do. No one can pay me tons of money to do a thing (long term) that I don't feel excited about. So in this blog I will try to convince myself (and maybe the rest of you) why I am pursuing AI safety and particularly Technical AI safety with a hint of governance and philosophy.
 
 ## Section I: Why have AI at all?
 
