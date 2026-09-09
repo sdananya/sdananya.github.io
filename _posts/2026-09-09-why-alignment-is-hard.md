@@ -1,5 +1,5 @@
 ---
-title: "Why is (technical) Alignment Hard?"
+title: "Why is Alignment Hard?"
 date: 2026-09-09
 permalink: /posts/2026/09/why-alignment-is-hard/
 excerpt: "What we mean by alignment, what people have tried so far, and why we are still stuck."
