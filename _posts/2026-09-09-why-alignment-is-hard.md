@@ -60,7 +60,9 @@ I have few (overlapping) points.
 
 We optimise something we can measure, like a thumbs up from a human, or a score from a reward model, or agreement with a constitution. These aren't the actual thing we want, they are just stand-ins for it. And [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart%27s_law) says that the moment you optimise a stand-in hard enough, it kinda stops standing in for anything.
 
-My favourite example here is [the boat](https://openai.com/research/faulty-reward-functions). An RL agent in a boat racing game figured out that it could get more points by driving in circles in a lagoon and hitting the same targets forever instead of finishing the race, because nobody wrote "go in circles forever" in the reward, they wrote "score points" and just assumed scoring points meant racing. Fair but wrong assumption. (Can you tell whether it is an outer or inner alignment failure?)
+My favourite example here is [the boat](https://openai.com/index/faulty-reward-functions/). An RL agent in a boat racing game figured out that it could get more points by driving in circles in a lagoon and hitting the same targets forever instead of finishing the race, because nobody wrote "go in circles forever" in the reward, they wrote "score points" and just assumed scoring points meant racing. Fair but wrong assumption. (Can you tell whether it is an outer or inner alignment failure?)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tlOIHko8ySg" title="CoastRunners reward hacking" frameborder="0" allowfullscreen></iframe>iframe>
 
 Sycophancy is basically Goodhart on human approval. Humans rate agreeable answers higher so models get agreeable, including when you are wrong. Same with models that hard-code test cases, or sound confident because confident answers get rewarded, or add ten caveats because that looks careful. I don't think any of this is the model being evil, it is just being exactly as good at the proxy as we trained it to be.
 
