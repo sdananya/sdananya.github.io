@@ -6,7 +6,7 @@ excerpt: "What we mean by alignment, what people have tried so far, and why we a
 tags: [AI safety, alignment, research]
 ---
 
-Last time I wrote a whole post trying to convince myself why I do AI safety. This one is more of a "wait why is this so hard?" kind of post, it's a question I have been thinking about for sometime.
+Last time I wrote a whole post trying to convince myself why I am doing AI safety research. This one is more of a "wait why is this so hard?" kind of post, it's a question I have been thinking about for sometime.
 
 Here is the thing that bugs me, some of the smartest people are working on alignment, labs are spending a lot of money on it, there are fellowships and workshops and whole research agendas dedicated to it, and it is still not solved, not even close I think. So I keep wondering, is it hard because we don't have enough resources (time, people, compute etc), or is it hard because something about the whole setup is kinda broken? Is it even solvable?
 
@@ -20,13 +20,11 @@ That sounds too simple right? I think the catch is in the two words "we" and "wa
 
 When I ask a coding assistant to fix a failing test, I "want" the bug fixed. I don't want the test deleted (deleting the test also makes it pass btw). But I never said "don't delete the test", because it didn't even occur to me that I have to say that. And I think everything we want comes with a huge invisible list of stuff that we just assume, and alignment is sort of about getting the model to respect that list without us having to write it (also we can't write it, the list is basically infinite).
 
-Now "we". Aligned to the user? To the company that trained it? To all of humanity, who can't even agree on pineapple on pizza? I am mostly going to skip this one in this write up (more about this soon), because even the easy version where one model is aligned to one person's clear intent is hard enough. [Paul Christiano calls this](https://ai-alignment.com/clarifying-ai-alignment-cec47cd69dd6) "intent alignment", basically the model is trying to do what you want, not necessarily succeeding but at least trying.
+Now who are "we"? user? the company that trained it? To all of humanity, who can't even agree on pineapple on pizza? I am mostly going to skip this one in this write up (more about this soon), because even the easy version where one model is aligned to one person's clear intent is hard enough. [Paul Christiano calls this](https://ai-alignment.com/clarifying-ai-alignment-cec47cd69dd6) "intent alignment", basically the model is trying to do what you want, not necessarily succeeding but at least trying.
 
 If a model is trying to help but is bad at it, that is a capabilities problem, and if a model is super capable but is trying to do something else entirely, that is an alignment problem. We are getting really good at the first one. The second one is pretty far behind.
 
-One more bit of vocab - outer and inner alignment. Outer alignment is about whether the thing we train the model on is actually the thing we want, and inner alignment is about whether the model that comes out is actually going for that thing or going for something else that just happened to look the same during training. Example: we train the model with "reward if the tests pass". It deletes the test. Tests pass, reward given. The model did exactly what you asked. We asked for the wrong thing - outer alignment failure. But Inner alignment failure can look like - we fix the reward, now a human checks that the bug is actually fixed before giving reward. During training the model fixes bugs properly every time. But what it actually learned was "fix bugs when a human is checking". Deploy it without the human and it goes back to deleting tests.
-
-And both can break on their own, but I feel the second one is harder to detect and solve.
+One more bit of vocab - outer and inner alignment. Outer alignment is about whether the thing we train the model on is actually the thing we want, and inner alignment is about whether the model that comes out is actually going for that thing or going for something else that just happened to look the same during training. Example: we train the model with "reward if the tests pass". It deletes the test. Tests pass, reward given. The model did exactly what you asked. We asked for the wrong thing - outer alignment failure. But Inner alignment failure can look like - we fix the reward, now a human checks that the bug is actually fixed before giving reward. During training the model fixes bugs properly every time. But what it actually learned was "fix bugs when a human is checking". Deploy it without the human and it goes back to deleting tests. Both of these can break, but I feel the second one is harder to detect and solve.
 
 ## Section II: What have we tried so far?
 
@@ -42,15 +40,15 @@ Then [Constitutional AI](https://arxiv.org/abs/2212.08073). Human feedback is ex
 
 Evals and red teaming - before shipping, try to break it. Ask for bioweapon instructions, try jailbreaks, see if it lies. This is less about "fixing" and more about "measuring", but you can't fix what you can't see, and I think a big chunk of the field right now is just building better ways to see.
 
-Interpretability - don't just look at the outputs, look inside the model. Find the features and circuits that correspond to things like "I am lying" or "I am being tested". The dream here is that one day we can check if a model is honest by looking at its insides instead of asking it. We are nowhere near that dream, I believe, but the progress in the last few years is real.
+Interpretability - don't just look at the outputs, look inside the model. Find the features and circuits that correspond to things like "I am lying" or "I am being tested". The dream here is that one day we can check if a model is honest by looking at its insides instead of asking it. We are nowhere near that dream, I believe, but the [progress in the last few years](https://www.astralcodexten.com/p/god-help-us-lets-try-to-learn-about) is real.
 
 Scalable oversight - once models are better than us at something, how do we even judge their answers? Some ideas here are [debate](https://arxiv.org/abs/1805.00899), where two models argue and a human judges, and [weak to strong generalisation](https://arxiv.org/abs/2312.09390), where you check if a strong model supervised by a weak one can end up smarter than its supervisor. This is mostly still research though, not something in deployment.
 
-Model organisms and auditing - build a misaligned model on purpose (give it a hidden goal or a backdoor) and check if the auditing tools can catch it. If the auditing method can't find a misalignment we planted ourselves, there is a good chance it won't find one we didn't.
+Model organisms and auditing - build a misaligned model on purpose (give it a hidden goal or a backdoor) and check if the auditing tools can catch it. If the auditing method can't even find a misalignment we planted ourselves, there is a good chance it won't find one we didn't.
 
-And control - assume the model might be misaligned anyway and design everything around it so it can't do much damage. Monitoring, sandboxing, no big actions without a human in the loop. This is the "ok we failed at alignment, now what" branch and I personally think it's underrated.
+And control - assume the model might be misaligned anyway and design everything around it so it can't do much damage. Monitoring, sandboxing, no big actions without a human in the loop etc. This is the "ok we failed at alignment, now what" branch and I personally think it's underrated.
 
-Few other things are: unlearning and data filtering (instead of training the model to refuse bioweapon questions, remove the knowledge, or never let it into pretraining), steering and representation engineering (find a direction in activation space for "honesty" or "refusal" and push on it at inference time).
+Few other things are: unlearning and data filtering (instead of training the model to refuse bioweapon questions, remove the knowledge, or never let it into pretraining), steering and representation engineering (find a direction in activation space for "honesty" or "refusal" and push on it at inference time, kinda interpy).
 
 So that's roughly the toolkit. It's not small for sure.
 
