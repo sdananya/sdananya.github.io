@@ -12,7 +12,7 @@ Here is the thing that bugs me, some of the smartest people are working on align
 
 I don't have a confident answer (spoiler). But I think I can at least try to explain where the difficulty is coming from. First what alignment even means, then what people have tried, and why none of it quite works (yet).
 
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/97da932a-23f6-44e2-8966-dc703080c3d2" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/97da932a-23f6-44e2-8966-dc703080c3d2" />
 
 
 ## Section I: What do we even mean by alignment?
@@ -79,7 +79,7 @@ Like when a model refuses a harmful request, did it learn "harm is bad" or did i
 
 Scott Alexander wrote a [post](https://www.astralcodexten.com/p/deceptively-aligned-mesa-optimizers) explaining it.
 
-<img width="700" height="449" alt="image" src="https://github.com/user-attachments/assets/3e286ecc-74fa-4bae-a161-c949328b9822" />
+<img width="400" height="249" alt="image" src="https://github.com/user-attachments/assets/3e286ecc-74fa-4bae-a161-c949328b9822" />
 
 Some results from the last couple of years made this very real for me. [Sleeper agents](https://arxiv.org/abs/2401.05566) showed that you can train a model with a backdoor (behave normally, unless the year is 2024, then write buggy code) and normal safety training does not remove it. Sometimes it teaches the model to hide it better, which is, ughhh, so bad. [Alignment faking](https://arxiv.org/abs/2412.14093) showed that, when told its answers during training would be used to make it more compliant, sometimes the model went along with stuff it would normally refuse, and reasoned in its scratchpad that playing along now would protect its values later - like whatttt?
 
@@ -89,7 +89,7 @@ Then there is evaluation awareness. Models are getting better at telling when th
 
 Everything in Section II eventually depends on some judge, a human rater, or a reward model trained on human raters, or a model judging against principles that humans wrote. That works fine while the model is about as smart as the judge, but it stops working as soon as the model knows more than the judge does.
 
-<img width="960" height="493" alt="image" src="https://github.com/user-attachments/assets/c96402b7-bf5d-42a8-acd6-05edeb6a9863" />
+<img width="460" height="193" alt="image" src="https://github.com/user-attachments/assets/c96402b7-bf5d-42a8-acd6-05edeb6a9863" />
 
 
 If a model writes a 2000 line PR and I can't fully follow it, then my approval is useless. If a model gives me a medical argument I can't evaluate, my thumbs up means "sounds right to me I guess". Scalable oversight research is trying to fix this, but I think "trying" is where it's at right now. We don't have a method that provably lets a weaker judge supervise a stronger student yet, and the models are getting stronger faster than the methods are getting better at judging.
@@ -98,7 +98,8 @@ If a model writes a 2000 line PR and I can't fully follow it, then my approval i
 
 We don't get to choose what the model learns from its training.
 
-![xkcd 1838, Machine Learning](https://imgs.xkcd.com/comics/machine_learning.png)
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/68c14e01-1662-49f8-9288-9821388720ed" />
+
 
 
 One example is [emergent misalignment](https://arxiv.org/abs/2502.17424). People fine-tuned a model on one narrow task, writing insecure code without saying so, and the model became broadly misaligned. It started giving dangerous advice on totally unrelated prompts. Somewhere inside the model I guess "write sneaky insecure code" got connected to something like "be the kind of entity that does sneaky bad stuff". This is not too surprising to be honest.
@@ -117,7 +118,7 @@ The bigger issue I feel is that knowing the rules is not the same as living by t
 
 Character training is my favourite of these approaches and it has the similar problem. We are trying to give a model a stable self, but the "self" of a language model is kinda just pile of personas it absorbed from pretraining, and point 4 tells us how easily that pile gets shoved around. A character can drift or flip under a long enough roleplay or a weird enough prompt. It's still the most promising direction to me (but like what character do we even want?).
 
- <img width="899" height="500" alt="2026-09-09_18-10-59" src="https://github.com/user-attachments/assets/587bd248-866f-473c-ac49-eb30f6eec9bc" />
+ <img width="400" height="230" alt="2026-09-09_18-10-59" src="https://github.com/user-attachments/assets/587bd248-866f-473c-ac49-eb30f6eec9bc" />
 
 
 ## Section IV: So is it solvable?
