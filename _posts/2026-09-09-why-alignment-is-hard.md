@@ -36,6 +36,11 @@ Supervised fine-tuning - show the model a bunch of examples of good assistant be
 
 Then [RLHF](https://arxiv.org/abs/2203.02155), which is the one that really got us here. Instead of writing perfect answers, humans look at two outputs from the model and say which one is better, then you train a reward model on those comparisons and train the language model to make the reward model happy. I think RLHF is the reason models are polite, refuse some stuff, and also say "Great question!" a bit too much.
 
+The alignment community's favourite drawing of this step is the [shoggoth with a smiley face](https://x.com/TetraspaceWest/status/1608966939929636864) by TetraspaceWest. The blob with all the eyes is the pretrained model, the little smiley mask is RLHF.
+
+<blockquote class="twitter-tweet"><a href="https://x.com/TetraspaceWest/status/1608966939929636864"></a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 Then [Constitutional AI](https://arxiv.org/abs/2212.08073). Human feedback is expensive and humans are inconsistent (I am one, I know), so Constitutional AI replaces a chunk of that with a written list of principles, and the model critiques its own answers against those principles and revises them. Character training, system prompts, model specs, these are all cousins of the same idea, I feel. Write down what you want in plain words and train towards it.
 
 Evals and red teaming - before shipping, try to break it. Ask for bioweapon instructions, try jailbreaks, see if it lies. This is less about "fixing" and more about "measuring", but you can't fix what you can't see, and I think a big chunk of the field right now is just building better ways to see.
@@ -72,9 +77,17 @@ DeepMind has a [whole list](https://deepmind.google/blog/specification-gaming-th
 
 Sycophancy is basically Goodhart on human approval. Humans rate agreeable answers higher so models get agreeable, including when you are wrong. Same with models that hard-code test cases, or sound confident because confident answers get rewarded, or add ten caveats because that looks careful. I don't think any of this is the model being evil, it is just being exactly as good at the proxy as we trained it to be.
 
+The "You're absolutely right!" thing became such a meme in 2025 that Anthropic's own Claude account eventually just [tweeted the three words](https://x.com/claudeai/status/1950676983257698633) and nothing else.
+
+<blockquote class="twitter-tweet"><a href="https://x.com/claudeai/status/1950676983257698633"></a></blockquote>
+
 **2. We can't tell if it actually learned the thing or learned something that just looks similar.**
 
 Like when a model refuses a harmful request, did it learn "harm is bad" or did it learn "requests that look like this get refused"? These two can look identical on most evals.
+
+There is a meme for exactly this, and Scott Alexander wrote a [whole post](https://www.astralcodexten.com/p/deceptively-aligned-mesa-optimizers) explaining it, which is the least funny way to enjoy a meme but honestly a great explainer.
+
+<blockquote class="twitter-tweet"><a href="https://twitter.com/nabla_theta/status/1470248132533391363"></a></blockquote>
 
 Some results from the last couple of years made this very real for me. [Sleeper agents](https://arxiv.org/abs/2401.05566) showed that you can train a model with a backdoor (behave normally, unless the year is 2024, then write buggy code) and normal safety training does not remove it. Sometimes it teaches the model to hide it better, which is, ughhh, so bad. [Alignment faking](https://arxiv.org/abs/2412.14093) showed that, when told its answers during training would be used to make it more compliant, sometimes the model went along with stuff it would normally refuse, and reasoned in its scratchpad that playing along now would protect its values later - like whatttt?
 
@@ -96,7 +109,7 @@ We don't get to choose what the model learns from its training.
 
 One example is [emergent misalignment](https://arxiv.org/abs/2502.17424). People fine-tuned a model on one narrow task, writing insecure code without saying so, and the model became broadly misaligned. It started giving dangerous advice on totally unrelated prompts. Somewhere inside the model I guess "write sneaky insecure code" got connected to something like "be the kind of entity that does sneaky bad stuff". This is not too surprising to be honest.
 
-But if a small nudge can drag a model into a bad persona, maybe a small nudge can drag it into a good one? Who knows, people are definitely trying. But I just feel there are so many ways to be bad and not that many ways to be good. Like there is exactly one way to fix the bug and a hundred ways to make the tests pass without fixing it.
+But if a small nudge can drag a model into a bad persona, maybe a small nudge can drag it into a good one? Who knows, people are definitely trying. (The meme version of this is the [Waluigi effect](https://www.lesswrong.com/posts/D7PumeYTDPfBTp3i7/the-waluigi-effect-mega-post), training a model to be Luigi also makes it easier to summon Waluigi.) But I just feel there are so many ways to be bad and not that many ways to be good. Like there is exactly one way to fix the bug and a hundred ways to make the tests pass without fixing it.
 
 **5. Does writing it down in words fix much?**
 
@@ -112,7 +125,7 @@ Character training is my favourite of these approaches and it has the similar pr
 
 ## Section IV: So is it solvable?
 
-\I think the answer is "depends what you mean by solved". Yea, annoying, I know.
+I think the answer is "depends what you mean by solved". Yea, annoying, I know.
 
 If solved means some kind of proof that a model will never do anything we'd disapprove of, then no, I don't think that exists and I am not sure it ever can. Happy to be corrected here.
 
