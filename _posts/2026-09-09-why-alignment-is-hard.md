@@ -76,7 +76,7 @@ Like when a model refuses a harmful request, did it learn "harm is bad" or did i
 
 Scott Alexander wrote a [post](https://www.astralcodexten.com/p/deceptively-aligned-mesa-optimizers) explaining it.
 
-<blockquote class="twitter-tweet"><a href="https://twitter.com/nabla_theta/status/1470248132533391363"></a></blockquote>
+<img width="700" height="449" alt="image" src="https://github.com/user-attachments/assets/3e286ecc-74fa-4bae-a161-c949328b9822" />
 
 Some results from the last couple of years made this very real for me. [Sleeper agents](https://arxiv.org/abs/2401.05566) showed that you can train a model with a backdoor (behave normally, unless the year is 2024, then write buggy code) and normal safety training does not remove it. Sometimes it teaches the model to hide it better, which is, ughhh, so bad. [Alignment faking](https://arxiv.org/abs/2412.14093) showed that, when told its answers during training would be used to make it more compliant, sometimes the model went along with stuff it would normally refuse, and reasoned in its scratchpad that playing along now would protect its values later - like whatttt?
 
