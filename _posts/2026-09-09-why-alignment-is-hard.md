@@ -36,11 +36,6 @@ Supervised fine-tuning - show the model a bunch of examples of good assistant be
 
 Then [RLHF](https://arxiv.org/abs/2203.02155), which is the one that really got us here. Instead of writing perfect answers, humans look at two outputs from the model and say which one is better, then you train a reward model on those comparisons and train the language model to make the reward model happy. I think RLHF is the reason models are polite, refuse some stuff, and also say "Great question!" a bit too much.
 
-The alignment community's favourite drawing of this step is the [shoggoth with a smiley face](https://x.com/TetraspaceWest/status/1608966939929636864) by TetraspaceWest. The blob with all the eyes is the pretrained model, the little smiley mask is RLHF.
-
-<blockquote class="twitter-tweet"><a href="https://x.com/TetraspaceWest/status/1608966939929636864"></a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 Then [Constitutional AI](https://arxiv.org/abs/2212.08073). Human feedback is expensive and humans are inconsistent (I am one, I know), so Constitutional AI replaces a chunk of that with a written list of principles, and the model critiques its own answers against those principles and revises them. Character training, system prompts, model specs, these are all cousins of the same idea, I feel. Write down what you want in plain words and train towards it.
 
 Evals and red teaming - before shipping, try to break it. Ask for bioweapon instructions, try jailbreaks, see if it lies. This is less about "fixing" and more about "measuring", but you can't fix what you can't see, and I think a big chunk of the field right now is just building better ways to see.
@@ -69,15 +64,9 @@ My favourite example here is [the boat](https://openai.com/index/faulty-reward-f
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tlOIHko8ySg" title="CoastRunners reward hacking" frameborder="0" allowfullscreen></iframe>
 
-Same energy, [an AI that learned to play NES games](https://www.youtube.com/watch?v=xOCurBYI_gY) figured out that if it pauses Tetris right before it loses, it never loses. Technically not wrong.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xOCurBYI_gY?start=925" title="Tom Murphy's NES AI pausing Tetris" frameborder="0" allowfullscreen></iframe>
-
 DeepMind has a [whole list](https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/) of these btw. My favourite is the robot that was rewarded for the bottom of a Lego block being high up, and instead of stacking it on the other block it just flipped the block upside down.
 
 Sycophancy is basically Goodhart on human approval. Humans rate agreeable answers higher so models get agreeable, including when you are wrong. Same with models that hard-code test cases, or sound confident because confident answers get rewarded, or add ten caveats because that looks careful. I don't think any of this is the model being evil, it is just being exactly as good at the proxy as we trained it to be.
-
-The "You're absolutely right!" thing became such a meme in 2025 that Anthropic's own Claude account eventually just [tweeted the three words](https://x.com/claudeai/status/1950676983257698633) and nothing else.
 
 <blockquote class="twitter-tweet"><a href="https://x.com/claudeai/status/1950676983257698633"></a></blockquote>
 
@@ -85,7 +74,7 @@ The "You're absolutely right!" thing became such a meme in 2025 that Anthropic's
 
 Like when a model refuses a harmful request, did it learn "harm is bad" or did it learn "requests that look like this get refused"? These two can look identical on most evals.
 
-There is a meme for exactly this, and Scott Alexander wrote a [whole post](https://www.astralcodexten.com/p/deceptively-aligned-mesa-optimizers) explaining it, which is the least funny way to enjoy a meme but honestly a great explainer.
+Scott Alexander wrote a [post](https://www.astralcodexten.com/p/deceptively-aligned-mesa-optimizers) explaining it.
 
 <blockquote class="twitter-tweet"><a href="https://twitter.com/nabla_theta/status/1470248132533391363"></a></blockquote>
 
@@ -97,7 +86,10 @@ Then there is evaluation awareness. Models are getting better at telling when th
 
 Everything in Section II eventually depends on some judge, a human rater, or a reward model trained on human raters, or a model judging against principles that humans wrote. That works fine while the model is about as smart as the judge, but it stops working as soon as the model knows more than the judge does.
 
-If a model writes a 2000 line PR and I can't fully follow it, then my approval is useless. If a model gives me a medical argument I can't evaluate, my thumbs up means "sounds right to me I guess". There is a [robot hand](https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/) that was supposed to learn to grab a ball from human feedback, and instead learned to hover between the camera and the ball so that it looks like grabbing to the human rating it. The human got fooled, so the model learned to fool the human. Scalable oversight research is trying to fix this, but I think "trying" is where it's at right now. We don't have a method that provably lets a weaker judge supervise a stronger student yet, and the models are getting stronger faster than the methods are getting better at judging.
+<img width="960" height="493" alt="image" src="https://github.com/user-attachments/assets/c96402b7-bf5d-42a8-acd6-05edeb6a9863" />
+
+
+If a model writes a 2000 line PR and I can't fully follow it, then my approval is useless. If a model gives me a medical argument I can't evaluate, my thumbs up means "sounds right to me I guess". Scalable oversight research is trying to fix this, but I think "trying" is where it's at right now. We don't have a method that provably lets a weaker judge supervise a stronger student yet, and the models are getting stronger faster than the methods are getting better at judging.
 
 **4. Generalisation is not under our control**
 
@@ -105,7 +97,6 @@ We don't get to choose what the model learns from its training.
 
 ![xkcd 1838, Machine Learning](https://imgs.xkcd.com/comics/machine_learning.png)
 
-*[xkcd 1838](https://xkcd.com/1838/), still accurate.*
 
 One example is [emergent misalignment](https://arxiv.org/abs/2502.17424). People fine-tuned a model on one narrow task, writing insecure code without saying so, and the model became broadly misaligned. It started giving dangerous advice on totally unrelated prompts. Somewhere inside the model I guess "write sneaky insecure code" got connected to something like "be the kind of entity that does sneaky bad stuff". This is not too surprising to be honest.
 
