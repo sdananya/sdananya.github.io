@@ -9,7 +9,7 @@ redirect_from:
 
 Hi! I'm Ananya Sutradhar. I enjoy building things, breaking things, and learning from both.
 
-I'm currently an [Anthropic Fellow](https://alignment.anthropic.com/2024/anthropic-fellows-program/), working on AI safety and alignment research. 
+I'm currently an [Anthropic Fellow](https://alignment.anthropic.com/2024/anthropic-fellows-program/), working on AI safety and alignment. 
 
 Previously, I was a Research Fellow at [Microsoft Research India](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/) working with [Ravishankar Krishnaswamy](https://rakri.github.io/), [Gopal Srinivasa](https://www.microsoft.com/en-us/research/people/gopalsr/) and [Navin Goyal](https://scholar.google.com/citations?user=w8WJCnkAAAAJ&hl=en).
 
