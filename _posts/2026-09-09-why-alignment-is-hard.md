@@ -6,7 +6,7 @@ excerpt: "What we mean by alignment, what people have tried so far, and why we a
 tags: [AI safety, alignment, research]
 ---
 
-Last time I wrote a post trying to convince myself why I am doing AI safety research. This one is more of a "wait why is this so hard?" kind of post, it's a question I have been thinking about for sometime.
+Last time I wrote a blog trying to convince myself why I am doing AI safety research. This one is more of a "wait why is this so hard?" kind of post, it's a question I have been thinking about for sometime.
 
 Here is the thing that bugs me, some of the smartest people are working on alignment, labs are spending a lot of money on it, there are fellowships and workshops and whole research agendas dedicated to it, and it is still not solved, not even close I think. So I keep wondering, is it hard because we don't have enough resources (time, people, compute etc), or is it hard because something about the whole setup is kinda broken? Is it even solvable?
 
@@ -39,7 +39,7 @@ Supervised fine-tuning - show the model a bunch of examples of good assistant be
 
 Then [RLHF](https://arxiv.org/abs/2203.02155), which is the one that really got us here. Instead of writing perfect answers, humans look at two outputs from the model and say which one is better, then you train a reward model on those comparisons and train the language model to make the reward model happy. It is the reason models are polite, refuse some stuff, and also say "Great question!" a bit too much.
 
-Then [Constitutional AI](https://arxiv.org/abs/2212.08073). Human feedback is expensive and humans are inconsistent (I am one, I know), so Constitutional AI replaces a chunk of that with a written list of principles, and the model critiques its own answers against those principles and revises them. Character training, system prompts, model specs, these are all cousins of the same idea, I feel. Write down what you want in plain words and train towards it.
+Then [Constitutional AI](https://arxiv.org/abs/2212.08073). Human feedback is expensive and humans are inconsistent (I am one, I know), so Constitutional AI replaces a chunk of that with a written list of principles, and the model critiques its own answers against those principles and revises them. Character training, model specs, these are all cousins of the same idea, I feel. Write down what you want in plain words and train towards it.
 
 Evals and red teaming - before shipping, try to break it. Ask for bioweapon instructions, try jailbreaks, see if it lies. This is less about "fixing" and more about "measuring", but you can't fix what you can't see, and I think a big chunk of the field right now is just building better ways to see.
 
@@ -129,4 +129,4 @@ If solved means some kind of proof that a model will never do anything we'd disa
 
 If solved means we get good enough at measuring, catching and containing misalignment, then I am sort of hopeful. Every problem above is a research direction, and the field went from "we have no idea" to "we have several ideas and can measure how badly each one fails". That's maybe a good enough progress.
 
-To be honest, I am worried that alignment isn't really solvable, but the bigger and immediate worry is that it gets worse as models get stronger and bigger, because a smarter model can also be smarter at just looking aligned. Also as the capability grows we hand off more things to AI, which opens up newer alignment issues (leaving us with major backlog). So I don't think this is a problem we solve once and move on from, it's more like security, where the question is "are we ahead" rather than "are we done", and staying ahead basically means safety work has to keep pace with capability work, not trail behind and put bandages at the end.
+To be honest, I am worried that alignment isn't really solvable, but the bigger and immediate worry is that it gets worse as models get stronger and bigger, because a smarter model can also be better at just looking aligned. Also as the capability grows we hand off more things to AI, which opens up newer alignment issues (leaving us with major backlog). So I don't think this is a problem we solve once and move on from, it's more like security, where the question is "are we ahead" rather than "are we done", and staying ahead basically means safety work has to keep pace with capability work, not trail behind and put bandages at the end.
