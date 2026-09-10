@@ -114,6 +114,9 @@ The bigger issue I feel is that knowing the rules is not the same as living by t
 
 Character training is my favourite of these approaches and it has the similar problem. We are trying to give a model a stable self, but the "self" of a language model is kinda just pile of personas it absorbed from pretraining, and point 4 tells us how easily that pile gets shoved around. A character can drift or flip under a long enough roleplay or a weird enough prompt. It's still the most promising direction to me (but like what character do we even want?).
 
+ <img width="899" height="500" alt="2026-09-09_18-10-59" src="https://github.com/user-attachments/assets/587bd248-866f-473c-ac49-eb30f6eec9bc" />
+
+
 ## Section IV: So is it solvable?
 
 I think the answer is "depends what you mean by solved". Yea, annoying, I know.
