@@ -37,7 +37,7 @@ Pretraining gives us a text predictor that has read the internet and learned to 
 
 Supervised fine-tuning - show the model a bunch of examples of good assistant behaviour written by humans, make it copy them. The problem is we can only write so many examples and the model can only get as good as whoever wrote them.
 
-Then [RLHF](https://arxiv.org/abs/2203.02155), which is the one that really got us here. Instead of writing perfect answers, humans look at two outputs from the model and say which one is better, then you train a reward model on those comparisons and train the language model to make the reward model happy. I think RLHF is the reason models are polite, refuse some stuff, and also say "Great question!" a bit too much.
+Then [RLHF](https://arxiv.org/abs/2203.02155), which is the one that really got us here. Instead of writing perfect answers, humans look at two outputs from the model and say which one is better, then you train a reward model on those comparisons and train the language model to make the reward model happy. It is the reason models are polite, refuse some stuff, and also say "Great question!" a bit too much.
 
 Then [Constitutional AI](https://arxiv.org/abs/2212.08073). Human feedback is expensive and humans are inconsistent (I am one, I know), so Constitutional AI replaces a chunk of that with a written list of principles, and the model critiques its own answers against those principles and revises them. Character training, system prompts, model specs, these are all cousins of the same idea, I feel. Write down what you want in plain words and train towards it.
 
@@ -98,7 +98,7 @@ If a model writes a 2000 line PR and I can't fully follow it, then my approval i
 
 We don't get to choose what the model learns from its training.
 
-<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/68c14e01-1662-49f8-9288-9821388720ed" />
+<img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/68c14e01-1662-49f8-9288-9821388720ed" />
 
 
 
