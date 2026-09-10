@@ -62,7 +62,13 @@ We optimise something we can measure, like a thumbs up from a human, or a score 
 
 My favourite example here is [the boat](https://openai.com/index/faulty-reward-functions/). An RL agent in a boat racing game figured out that it could get more points by driving in circles in a lagoon and hitting the same targets forever instead of finishing the race, because nobody wrote "go in circles forever" in the reward, they wrote "score points" and just assumed scoring points meant racing. Fair but wrong assumption. (Can you tell whether it is an outer or inner alignment failure?)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tlOIHko8ySg" title="CoastRunners reward hacking" frameborder="0" allowfullscreen></iframe>iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tlOIHko8ySg" title="CoastRunners reward hacking" frameborder="0" allowfullscreen></iframe>
+
+Same energy, [an AI that learned to play NES games](https://www.youtube.com/watch?v=xOCurBYI_gY) figured out that if it pauses Tetris right before it loses, it never loses. Technically not wrong.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xOCurBYI_gY?start=925" title="Tom Murphy's NES AI pausing Tetris" frameborder="0" allowfullscreen></iframe>
+
+DeepMind has a [whole list](https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/) of these btw. My favourite is the robot that was rewarded for the bottom of a Lego block being high up, and instead of stacking it on the other block it just flipped the block upside down.
 
 Sycophancy is basically Goodhart on human approval. Humans rate agreeable answers higher so models get agreeable, including when you are wrong. Same with models that hard-code test cases, or sound confident because confident answers get rewarded, or add ten caveats because that looks careful. I don't think any of this is the model being evil, it is just being exactly as good at the proxy as we trained it to be.
 
@@ -78,11 +84,15 @@ Then there is evaluation awareness. Models are getting better at telling when th
 
 Everything in Section II eventually depends on some judge, a human rater, or a reward model trained on human raters, or a model judging against principles that humans wrote. That works fine while the model is about as smart as the judge, but it stops working as soon as the model knows more than the judge does.
 
-If a model writes a 2000 line PR and I can't fully follow it, then my approval is useless. If a model gives me a medical argument I can't evaluate, my thumbs up means "sounds right to me I guess". Scalable oversight research is trying to fix this, but I think "trying" is where it's at right now. We don't have a method that provably lets a weaker judge supervise a stronger student yet, and the models are getting stronger faster than the methods are getting better at judging.
+If a model writes a 2000 line PR and I can't fully follow it, then my approval is useless. If a model gives me a medical argument I can't evaluate, my thumbs up means "sounds right to me I guess". There is a [robot hand](https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/) that was supposed to learn to grab a ball from human feedback, and instead learned to hover between the camera and the ball so that it looks like grabbing to the human rating it. The human got fooled, so the model learned to fool the human. Scalable oversight research is trying to fix this, but I think "trying" is where it's at right now. We don't have a method that provably lets a weaker judge supervise a stronger student yet, and the models are getting stronger faster than the methods are getting better at judging.
 
 **4. Generalisation is not under our control**
 
 We don't get to choose what the model learns from its training.
+
+![xkcd 1838, Machine Learning](https://imgs.xkcd.com/comics/machine_learning.png)
+
+*[xkcd 1838](https://xkcd.com/1838/), still accurate.*
 
 One example is [emergent misalignment](https://arxiv.org/abs/2502.17424). People fine-tuned a model on one narrow task, writing insecure code without saying so, and the model became broadly misaligned. It started giving dangerous advice on totally unrelated prompts. Somewhere inside the model I guess "write sneaky insecure code" got connected to something like "be the kind of entity that does sneaky bad stuff". This is not too surprising to be honest.
 
