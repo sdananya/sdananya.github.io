@@ -29,6 +29,12 @@ Work experience
   * Amazon
   * Implemented domain-driven design principles to optimize the notification triggering process
 
+Publications
+======
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
 Participations
 ======
 * February 2026–present: SPAR Fellow (Mentee)
@@ -48,9 +54,3 @@ Skills
   * C, C++, Python, Kotlin, Rust, JavaScript
 * Tools & Frameworks
   * PyTorch, TensorFlow, scikit-learn, AWS, SQL, Git
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
