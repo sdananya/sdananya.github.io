@@ -15,7 +15,7 @@ Previously, I was a Research Fellow at [Microsoft Research India](https://www.mi
 
 At Microsoft Research (Team DiskANN), I worked on efficient [multi-filter nearest neighbor retrieval](https://arxiv.org/abs/2511.04073) and [evaluating Deep Research systems](https://arxiv.org/abs/2609.12171).
 
-I am also a [SPAR Fellow](https://sparai.org/) , working with Prof. Lionel Levine on Value Alignment and Character Training.
+I am also a [SPAR Fellow](https://sparai.org/) , working with Prof. Lionel Levine on Value Alignment and [Character Training](https://openreview.net/forum?id=oh9CqCyxSc).
 
 I completed my B.Tech in Computer Science and Technology from [IIEST Shibpur](https://www.iiests.ac.in/) in 2025. I also interned as a Software Development Engineer at Amazon during the summer of 2024.
 
