@@ -22,8 +22,8 @@ Work experience
 
 * January 2025–May 2026: Pre-doctoral Research Fellow, Team DiskANN
   * Microsoft Research India
-  * Developed learning-based, filter-aware distance metrics for approximate nearest neighbor search under multiple conjunctive filters, improving retrieval quality and efficiency over generic metric baselines ([paper](https://arxiv.org/abs/2511.04073))
-  * Built WinSyn, an automated pipeline that generates realistic synthetic enterprise datasets for evaluating agentic Deep Research and question-answering systems ([paper](https://arxiv.org/abs/2609.12171))
+  * Developed learning-based, filter-aware distance metrics for approximate nearest neighbor search ([paper](https://arxiv.org/abs/2511.04073))
+  * Built WinSyn, an automated synthetic enterprise data pipeline for evaluating agentic Deep Research systems ([paper](https://arxiv.org/abs/2609.12171))
 
 * May 2024–July 2024: Software Development Engineer Intern
   * Amazon
