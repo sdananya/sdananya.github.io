@@ -13,7 +13,7 @@ I'm currently an [Anthropic Fellow](https://alignment.anthropic.com/2024/anthrop
 
 Previously, I was a Research Fellow at [Microsoft Research India](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/) working with [Ravishankar Krishnaswamy](https://rakri.github.io/), [Gopal Srinivasa](https://www.microsoft.com/en-us/research/people/gopalsr/) and [Navin Goyal](https://scholar.google.com/citations?user=w8WJCnkAAAAJ&hl=en).
 
-At Microsoft Research (Team DiskANN), I worked on efficient multi-filter nearest neighbor retrieval and evaluating Deep Research systems.
+At Microsoft Research (Team DiskANN), I worked on efficient [multi-filter nearest neighbor retrieval](https://arxiv.org/abs/2511.04073) and [evaluating Deep Research systems](https://arxiv.org/abs/2609.12171).
 
 I am also a [SPAR Fellow](https://sparai.org/) , working with Prof. Lionel Levine on Value Alignment and Character Training.
 
