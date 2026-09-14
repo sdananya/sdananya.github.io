@@ -93,6 +93,13 @@
   "references": [],
   "publications": [
     {
+      "name": "WinSyn: An Automated Pipeline for Realistic Enterprise Question-Answering Evaluation",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2026-09-10",
+      "website": "https://arxiv.org/abs/2609.12171",
+      "summary": "An automated pipeline that generates synthetic enterprise email corpora with grounded questions and reference answers, used to evaluate agentic question-answering systems on realistic, long-running workplace scenarios."
+    },
+    {
       "name": "Side Effects of Character Training: Quantifying Cross-Constitution Drift in LLMs",
       "publisher": "ICML 2026 Workshop on Pluralistic Alignment",
       "releaseDate": "2026-07-01",
