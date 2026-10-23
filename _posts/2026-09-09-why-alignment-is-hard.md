@@ -6,7 +6,7 @@ excerpt: "What we mean by alignment, what people have tried so far, and why we a
 tags: [AI safety, alignment, research]
 ---
 
-Last time I wrote a blog trying to convince myself why I am doing AI safety research. This one is more of a "wait why is this so hard?" kind of post, it's a question I have been thinking about for sometime.
+Last time I wrote a blog trying to convince myself why I am doing AI safety research. This one is more of a "wait why is this so hard?" kind of post, it's a question I have been thinking about for some time.
 
 Here is the thing that bugs me, some of the smartest people are working on alignment, labs are spending a lot of money on it, there are fellowships and workshops and whole research agendas dedicated to it, and it is still not solved, not even close I think. So I keep wondering, is it hard because we don't have enough resources (time, people, compute etc), or is it hard because something about the whole setup is kinda broken? Is it even solvable?
 
