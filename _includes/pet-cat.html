@@ -1,0 +1,65 @@
+<div class="pet-cat" id="pet-cat">
+<style>
+.pet-cat{position:relative;width:230px;max-width:70%;margin:1.5em 0 0;color:var(--global-text-color,#222);user-select:none;-webkit-user-select:none}
+.pet-cat svg{display:block;width:100%;height:auto;overflow:visible;cursor:grab;touch-action:pan-y}
+.pet-cat .pc-ink{fill:none;stroke:currentColor;stroke-width:4;stroke-linejoin:round;stroke-linecap:round}
+.pet-cat .pc-paper{fill:var(--global-bg-color,#fff);stroke:none}
+.pet-cat .pc-stripes{fill:url(#pc-lines);stroke:none}
+.pet-cat .pc-tail{transform-origin:70px 190px;animation:pc-swish 3.2s ease-in-out infinite}
+.pet-cat .pc-eyes{transform-origin:228px 66px;animation:pc-blink 5.5s infinite}
+.pet-cat .pc-body{transform-origin:150px 200px}
+.pet-cat.purring .pc-body{animation:pc-wiggle .32s ease-in-out infinite}
+.pet-cat.purring .pc-eyes{animation:none;transform:scaleY(.12)}
+.pet-cat.purring .pc-tail{animation-duration:.9s}
+.pet-cat .pc-count{font-size:.7em;opacity:.65;margin:.2em 0 0 .4em;min-height:1.4em}
+.pet-cat .pc-heart{position:absolute;pointer-events:none;color:#d9534f;font-size:16px;line-height:1;animation:pc-float 1.1s ease-out forwards}
+@keyframes pc-swish{0%,100%{transform:rotate(0)}50%{transform:rotate(-7deg)}}
+@keyframes pc-blink{0%,92%,100%{transform:scaleY(1)}95%,97%{transform:scaleY(.1)}}
+@keyframes pc-wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-1.2deg)}75%{transform:rotate(1.2deg)}}
+@keyframes pc-float{0%{opacity:0;transform:translate(-50%,0) scale(.5)}20%{opacity:1}100%{opacity:0;transform:translate(-50%,-55px) scale(1.2)}}
+@media (prefers-reduced-motion:reduce){.pet-cat .pc-tail,.pet-cat .pc-eyes,.pet-cat.purring .pc-body{animation:none}}
+</style>
+<svg viewBox="0 0 320 240" role="img" aria-label="A striped cat, drawn by Ananya. Stroke it to pet it." tabindex="0">
+<defs>
+<pattern id="pc-lines" width="8" height="8" patternUnits="userSpaceOnUse"><line x1="0" y1="4" x2="8" y2="4" stroke="currentColor" stroke-width="1.5"/></pattern>
+</defs>
+<g class="pc-tail">
+<path class="pc-paper" d="M62 178 C40 196 52 222 96 224 C140 226 176 210 222 208 C234 207 236 196 224 195 C180 194 142 208 100 206 C78 205 70 196 80 186 Z"/>
+<path class="pc-stripes" d="M62 178 C40 196 52 222 96 224 C140 226 176 210 222 208 C234 207 236 196 224 195 C180 194 142 208 100 206 C78 205 70 196 80 186 Z"/>
+<path class="pc-ink" d="M62 178 C40 196 52 222 96 224 C140 226 176 210 222 208 C234 207 236 196 224 195 C180 194 142 208 100 206 C78 205 70 196 80 186"/>
+</g>
+<g class="pc-body">
+<path class="pc-paper" d="M200 30 L214 48 Q228 44 242 48 L258 28 L262 58 Q268 82 258 98 L262 150 L264 176 Q264 185 254 185 L242 185 Q234 185 234 176 L234 168 Q200 198 130 198 C66 198 28 180 28 150 C28 116 70 96 130 94 C160 93 184 99 200 104 Q204 92 200 82 Q192 62 200 30 Z"/>
+<path class="pc-stripes" d="M200 30 L214 48 Q228 44 242 48 L258 28 L262 58 Q268 82 258 98 L262 150 L264 176 Q264 185 254 185 L242 185 Q234 185 234 176 L234 168 Q200 198 130 198 C66 198 28 180 28 150 C28 116 70 96 130 94 C160 93 184 99 200 104 Q204 92 200 82 Q192 62 200 30 Z"/>
+<path class="pc-ink" d="M200 30 L214 48 Q228 44 242 48 L258 28 L262 58 Q268 82 258 98 L262 150 L264 176 Q264 185 254 185 L242 185 Q234 185 234 176 L234 168 Q200 198 130 198 C66 198 28 180 28 150 C28 116 70 96 130 94 C160 93 184 99 200 104 Q204 92 200 82 Q192 62 200 30 Z"/>
+<g class="pc-eyes">
+<circle cx="216" cy="66" r="8" fill="#e0b21c" stroke="currentColor" stroke-width="2.5"/>
+<circle cx="242" cy="66" r="8" fill="#e0b21c" stroke="currentColor" stroke-width="2.5"/>
+<circle class="pc-pupil" cx="216" cy="66" r="3.6" fill="#222"/>
+<circle class="pc-pupil" cx="242" cy="66" r="3.6" fill="#222"/>
+</g>
+</g>
+</svg>
+<div class="pc-count" aria-live="polite"></div>
+<script>
+(function(){
+var box=document.getElementById('pet-cat');if(!box)return;
+var svg=box.querySelector('svg'),pupils=box.querySelectorAll('.pc-pupil'),label=box.querySelector('.pc-count');
+var KEY='petCatCount',count=0,dist=0,last=null,timer=null;
+try{count=parseInt(localStorage.getItem(KEY),10)||0}catch(e){}
+function show(){label.textContent=count?('You have petted this cat '+count+(count===1?' time':' times')):'Stroke the cat to pet it'}
+function heart(x,y){var h=document.createElement('span');h.className='pc-heart';h.textContent='♥';h.style.left=x+'px';h.style.top=y+'px';box.appendChild(h);h.addEventListener('animationend',function(){h.remove()})}
+function purr(){box.classList.add('purring');clearTimeout(timer);timer=setTimeout(function(){box.classList.remove('purring')},700)}
+function pet(x,y){count++;try{localStorage.setItem(KEY,count)}catch(e){}show();heart(x,y);purr()}
+function local(e){var r=box.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}}
+svg.addEventListener('pointermove',function(e){var p=local(e);if(last){dist+=Math.abs(p.x-last.x)+Math.abs(p.y-last.y);purr()}last=p;if(dist>140){dist=0;pet(p.x,p.y-10)}});
+svg.addEventListener('pointerleave',function(){last=null});
+svg.addEventListener('click',function(e){var p=local(e);pet(p.x,p.y-10)});
+svg.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pet(box.offsetWidth*.7,20)}});
+document.addEventListener('pointermove',function(e){var r=svg.getBoundingClientRect(),s=r.width/320;
+var cx=r.left+229*s,cy=r.top+66*s,dx=e.clientX-cx,dy=e.clientY-cy,d=Math.sqrt(dx*dx+dy*dy)||1,m=Math.min(3.4,d/40);
+for(var i=0;i<pupils.length;i++)pupils[i].setAttribute('transform','translate('+(dx/d*m).toFixed(2)+' '+(dy/d*m).toFixed(2)+')')});
+show();
+})();
+</script>
+</div>

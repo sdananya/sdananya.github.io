@@ -18,3 +18,6 @@ I completed my B.Tech in Computer Science and Technology from [IIEST Shibpur](ht
 I built and maintain the [AI Impact Archive](https://www.aiimpactarchive.com/), a website that tracks how AI is changing people's lives across countries and fields.
 
 Feel free to reach out via [email](mailto:ananyasutradhar1403@gmail.com) or find me on [Google Scholar](https://scholar.google.com/citations?user=CTUW-C4AAAAJ), [LinkedIn](https://www.linkedin.com/in/ananya-sutradhar), and [Twitter/X](https://x.com/ananya_sdhar).
+
+
+{% include pet-cat.html %}
