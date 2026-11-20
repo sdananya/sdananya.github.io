@@ -1,17 +1,18 @@
 {% include base_path %}
+{% assign share_url = base_path | append: page.url %}
 
-<section class="page__share">
-  {% if site.data.ui-text[site.locale].share_on_label %}
-    <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
-  {% endif %}
-
-  <a href="https://bsky.app/intent/compose?text={{ base_path }}{{ page.url }}" class="btn btn--bluesky" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u={{ base_path }}{{ page.url }}" class="btn btn--facebook" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ base_path }}{{ page.url }}" class="btn btn--linkedin" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-
-  <a href="https://www.addtoany.com/add_to/mastodon?linkurl={{  base_path | append: page.url | url_encode }}" class="btn btn--mastodon" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Mastodon"><i class="fab fa-mastodon" aria-hidden="true"></i><span> Mastodon</span></a>
-
-  <a href="https://x.com/intent/post?text={{ base_path }}{{ page.url }}" class="btn btn--x" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
+<section class="page__share share-min">
+  <style>
+    .share-min{display:flex;align-items:center;gap:.5em;flex-wrap:wrap}
+    .share-min__label{font-size:.75em;opacity:.7;margin-right:.3em}
+    .share-min a,.share-min button{display:inline-flex;align-items:center;justify-content:center;width:2.2em;height:2.2em;border-radius:50%;border:1px solid var(--global-border-color,#bbb);background:none;color:var(--global-text-color,inherit);font-size:.85em;text-decoration:none;cursor:pointer;padding:0;transition:background .15s,color .15s,border-color .15s}
+    .share-min a:hover,.share-min button:hover{background:var(--global-text-color,#333);color:var(--global-bg-color,#fff);border-color:var(--global-text-color,#333)}
+    .share-min__done{font-size:.75em;opacity:.7}
+  </style>
+  <span class="share-min__label">Share</span>
+  <a href="https://x.com/intent/post?url={{ share_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener" title="Share on X" aria-label="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | url_encode }}" target="_blank" rel="noopener" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+  <a href="https://bsky.app/intent/compose?text={{ page.title | append: ' ' | append: share_url | url_encode }}" target="_blank" rel="noopener" title="Share on Bluesky" aria-label="Share on Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i></a>
+  <button type="button" title="Copy link" aria-label="Copy link" onclick="var b=this,m=b.nextElementSibling;navigator.clipboard.writeText('{{ share_url }}').then(function(){m.textContent='Link copied';setTimeout(function(){m.textContent=''},1800)})"><i class="fas fa-link" aria-hidden="true"></i></button>
+  <span class="share-min__done" aria-live="polite"></span>
 </section>

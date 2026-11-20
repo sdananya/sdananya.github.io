@@ -39,4 +39,4 @@ Outside, traffic hummed and lights blinked in a rhythm that no longer felt alien
 
 ---
 
-*Note: got this idea when I was leaving for a run, and for the first time I could turn on the light of the hall without having to think which switch to press. And it really clicked me that I have started to understand this place maybe this city a bit. So here is a story based on this experience.
+*Note: got this idea when I was leaving for a run, and for the first time I could turn on the light of the hall without having to think which switch to press. And it really clicked me that I have started to understand this place maybe this city a bit. So here is a story based on this experience.*
