@@ -26,7 +26,7 @@ Some mornings she woke up and could breathe again. Other mornings the air itself
 
 The cat stopped showing up for a while. Then one day it came back thinner and louder, with a small kitten trailing behind. She left out two bowls of milk that evening.
 
-In spring she saw cardboard boxes stacked at the bottom of the stairs, the broken chair balanced on top. She stood outside her door for a while. Then she went up and knocked. She suddenly realized she had never knocked on his door before, not once in all those months. He opened the door with tape in his hand and looked surprised, then embarrassed. She had meant to ask where he was going. Instead she asked if he needed help with the boxes. They packed his kitchen together without saying much. When she left, he pressed the spare umbrella into her hands.  
+In spring she saw cardboard boxes stacked at the bottom of the stairs, the broken chair balanced on top. She stood outside her door for a while. Then went up and knocked. She suddenly realized she had never knocked on his door before, not once in all those months. He opened the door with tape in his hand and looked surprised, then embarrassed. She had meant to ask where he was going. Instead she asked if he needed help with the boxes. They packed his kitchen together without saying much. When she left, he pressed the spare umbrella into her hands.  
 “It might rain,” he said. It didn’t, that night or for a week after.
 
 By summer, the city had begun to feel softer around the edges. She still took wrong turns, still burned the toast, still forgot where she kept her socks. But she had favourite trees now, favourite corners in the park, a favourite smell in the air after rain, and a favourite song for long showers. She bought a lighter and learned to make one decent dal.
@@ -39,4 +39,4 @@ Outside, traffic hummed and lights blinked in a rhythm that no longer felt alien
 
 ---
 
-*Note: got this idea when I was leaving for a run, and for the first time I could turn on the light of the hall without having to think which switch to press. And it really clicked me that I have started to understand this place maybe this city a bit. So here is a story based on this experience, the character might seem like myself, because it is definitely heavily inspired by the things I have experienced. But also because I still don't know how writers put themselves in the other's shoes.*
+*Note: got this idea when I was leaving for a run, and for the first time I could turn on the light of the hall without having to think which switch to press. And it really clicked me that I have started to understand this place maybe this city a bit. So here is a story based on this experience.
