@@ -20,14 +20,14 @@ There was a man she often passed on the staircase. He lived one floor up. Once h
 The stairwell went yellow. She laughed, embarrassed, and he laughed too.
 
 He was quiet, kind, a little unsure of himself. He never said clever things, but he showed up with an extra umbrella whenever it looked like rain. They started talking in the evenings, first in the corridor, later at the tea shop downstairs.  
-The first time they went there, it rained without warning. He somehow had an extra umbrella. "I thought it might rain" he said shyly. They stayed until the rain stopped anyway, two cups each, arguing about whether the vada pav stall near the park was better than the one by the bus stop. He said the bus stop one. He was wrong, and she told him so, and he just laughed without even challenging.
+The first time they went there, it rained without warning. He somehow had an extra umbrella. “I thought it might rain,” he said shyly. They stayed until the rain stopped anyway, two cups each, arguing about whether the vada pav stall near the park was better than the one by the bus stop. He said the bus stop one. He was wrong, and she told him so, and he just laughed without even challenging.
 
 Some mornings she woke up and could breathe again. Other mornings the air itself felt too heavy, and she called in sick and lay on the floor under the fan, watching it turn. Her therapist said healing takes practice. She didn’t always believe her. On those days she didn’t go down for tea, and he never knocked to ask why. She was grateful for that, and a little disappointed.
 
 The cat stopped showing up for a while. Then one day it came back thinner and louder, with a small kitten trailing behind. She left out two bowls of milk that evening.
 
 In spring she saw cardboard boxes stacked at the bottom of the stairs, the broken chair balanced on top. She stood outside her door for a while. Then she went up and knocked. She suddenly realized she had never knocked on his door before, not once in all those months. He opened the door with tape in his hand and looked surprised, then embarrassed. She had meant to ask where he was going. Instead she asked if he needed help with the boxes. They packed his kitchen together without saying much. When she left, he pressed the spare umbrella into her hands.  
-“It’s might rain,” he said. It didn’t, that night or for a week after.
+“It might rain,” he said. It didn’t, that night or for a week after.
 
 By summer, the city had begun to feel softer around the edges. She still took wrong turns, still burned the toast, still forgot where she kept her socks. But she had favourite trees now, favourite corners in the park, a favourite smell in the air after rain, and a favourite song for long showers. She bought a lighter and learned to make one decent dal.
 
@@ -39,4 +39,4 @@ Outside, traffic hummed and lights blinked in a rhythm that no longer felt alien
 
 ---
 
-*Note: got this idea when I was leaving for a run, and for the first time I could turn on the light of the hall without having to think which switch to press. And it really clicked me that I have started to understand this place maybe this city a bit. So here is a story based on this experience, the character might seem like myself, because it is definitely heavily inspired by the things I have experienced. But also because I still don't know how writers put themselves the other's shoes.*
+*Note: got this idea when I was leaving for a run, and for the first time I could turn on the light of the hall without having to think which switch to press. And it really clicked me that I have started to understand this place maybe this city a bit. So here is a story based on this experience, the character might seem like myself, because it is definitely heavily inspired by the things I have experienced. But also because I still don't know how writers put themselves in the other's shoes.*
