@@ -14,6 +14,6 @@ Making LLMs believe false facts is useful for alignment evaluations and for buil
 
 On facts the model never saw in training, belief depth grows roughly log-linearly with the number of training facts. When we applied the method to alignment audits on a small model we got negative results, because small models often already act as if they believe facts placed in honeypot system prompts. Adding reinforcement learning so that the model less often says aloud that it is following a prompted false fact generalizes to held-out evaluations and nearly matches standard SDF on some of them. Training against one of the belief-depth metrics, however, makes those evaluations harder to trust.
 
-Work done during the Anthropic Fellows Program.
+Work done during the Anthropic Fellows Program and MATS.
 
 **Keywords:** Synthetic Document Fine-tuning, Belief Editing, Alignment Evaluations, Model Organisms, AI Safety
