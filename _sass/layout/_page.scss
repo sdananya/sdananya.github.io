@@ -399,3 +399,19 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+
+/*
+   Pages without the author sidebar: centre the content in a readable column
+   ========================================================================== */
+
+#main.no-sidebar .page,
+#main.no-sidebar .archive {
+  float: none;
+  width: 100%;
+  max-width: 46em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
